@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coffee Shop</title>
     <link href="./index.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="">
-   
-  </h1>
+
+<body class="font-sans bg-gray-100 min-h-screen flex flex-col">
+    <nav class="bg-blue-500 p-4 flex justify-end">
+        <a href="#" class="text-white mx-2 hover:text-gray-300">Home</a>
+        <a href="#" class="text-white mx-2 hover:text-gray-300">About</a>
+        <a href="#" class="text-white mx-2 hover:text-gray-300">Contact</a>
+        <a href="#" id="loginBtn" class="text-white mx-2 hover:text-gray-300">Log in</a>
+    </nav>
+    <h1 class="text-5xl text-center my-8">Coffee Shop</h1>
+    <div class="mx-auto">
+        <picture class="block mx-auto mb-4">
+            <source srcset="image/image.jpg?as=webp&width=416" type="image/webp" />
+            <source srcset="image/image.jpg?as=avif&width=416" type="image/avif" />
+            <img src="./image/image.jpg" alt="" class="max-w-full h-auto" />
+        </picture>
+        <p class="text-center">This website is created for coffee lovers who share the same passion for coffee like I do and to showcase my skills in web development.</p>
+    </div>
+
+
+  
+    <div id="loginOne" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg text-center">
+            <span id="closeBtn" class="text-2xl cursor-pointer absolute top-2 right-4">&times;</span>
+            <h2 class="text-3xl font-bold mb-4">Login</h2>
+            <input type="text" placeholder="Username" class="w-full p-2 mb-4 border border-gray-300 rounded">
+            <input type="password" placeholder="Password" class="w-full p-2 mb-4 border border-gray-300 rounded">
+            
+            <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
